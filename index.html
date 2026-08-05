@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Wilhelmina 💜</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+linear-gradient(180deg,#160024,#2a0052,#45006b,#240046);
+
+overflow-x:hidden;
+
+color:white;
+
+min-height:100vh;
+
+}
+
+/* =======================
+   Animated Background
+======================= */
+
+#stars{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+overflow:hidden;
+
+z-index:-2;
+
+}
+
+.star{
+
+position:absolute;
+
+width:3px;
+
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+animation:twinkle 3s infinite;
+
+}
+
+@keyframes twinkle{
+
+0%{
+opacity:.2;
+transform:scale(.5);
+}
+
+50%{
+opacity:1;
+transform:scale(1.6);
+}
+
+100%{
+opacity:.2;
+transform:scale(.5);
+}
+
+}
+
+/* Floating Hearts */
+
+.heart{
+
+position:fixed;
+
+bottom:-50px;
+
+font-size:24px;
+
+pointer-events:none;
+
+animation:floatHeart linear forwards;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:
+translateY(0)
+rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(-120vh)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* =======================
+Main Container
+======================= */
+
+.container{
+
+width:92%;
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+padding:40px 20px;
+
+}
+
+/* Title */
+
+.logo{
+
+font-size:50px;
+
+margin-top:20px;
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+50%{
+transform:scale(1.1);
+}
+
+}
+
+h1{
+
+font-size:60px;
+
+margin-top:10px;
+
+text-shadow:
+
+0 0 15px #fff,
+
+0 0 25px violet;
+
+}
+
+h2{
+
+font-size:35px;
+
+color:#ffd6ff;
+
+margin-bottom:20px;
+
+}
+
+/* Main Image */
+
+.profile{
+
+width:260px;
+
+height:260px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid white;
+
+box-shadow:
+
+0 0 25px white,
+
+0 0 50px violet;
+
+margin:20px auto;
+
+display:block;
+
+transition:.4s;
+
+}
+
+.profile:hover{
+
+transform:scale(1.05);
+
+}
+
+/* Card */
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:
+
+0 0 25px rgba(255,255,255,.15);
+
+margin-top:25px;
+
+}
+
+/* Typewriter */
+
+#typing{
+
+font-size:18px;
+
+line-height:2;
+
+min-height:180px;
+
+white-space:pre-line;
+
+}
+
+/* Cake */
+
+.cake{
+
+margin:35px auto;
+
+width:160px;
+
+animation:bounce 2.5s infinite;
+
+}
+
+@keyframes bounce{
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+.candle{
+
+width:12px;
+
+height:55px;
+
+background:white;
+
+margin:auto;
+
+border-radius:10px;
+
+position:relative;
+
+}
+
+.flame{
+
+position:absolute;
+
+top:-18px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:22px;
+
+animation:flicker .4s infinite alternate;
+
+}
+
+@keyframes flicker{
+
+from{
+
+transform:
+translateX(-50%)
+scale(.9);
+
+}
+
+to{
+
+transform:
+translateX(-50%)
+scale(1.1);
+
+}
+
+}
+
+.layer{
+
+height:35px;
+
+margin:4px 0;
+
+border-radius:10px;
+
+}
+
+.layer1{
+
+background:#ffe8f8;
+
+}
+
+.layer2{
+
+background:#ffc1e3;
+
+}
+
+.layer3{
+
+background:#ff89ca;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+margin-top:35px;
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:15px;
+
+}
+
+button{
+
+padding:14px 30px;
+
+font-size:17px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+background:white;
+
+color:#6b1fa8;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+
+0 10px 20px rgba(255,255,255,.3);
+
+}
+
+.musicBtn{
+
+background:#b517ff;
+
+color:white;
+
+}
+
+/* Popup */
+
+.popup{
+
+display:none;
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.75);
+
+backdrop-filter:blur(8px);
+
+justify-content:center;
+
+align-items:center;
+
+padding:20px;
+
+z-index:999;
+
+}
+
+.popup-content{
+
+background:
+
+linear-gradient(180deg,#4c0070,#6b1fa8);
+
+width:95%;
+
+max-width:700px;
+
+border-radius:25px;
+
+padding:30px;
+
+position:relative;
+
+color:white;
+
+box-shadow:0 0 30px violet;
+
+max-height:90vh;
+
+overflow:auto;
+
+}
+
+.close{
+
+position:absolute;
+
+top:15px;
+
+right:15px;
+
+width:42px;
+
+height:42px;
+
+border-radius:50%;
+
+background:white;
+
+color:#6b1fa8;
+
+font-size:22px;
+
+font-weight:bold;
+
+}
+
+.memory{
+
+width:100%;
+
+max-width:450px;
+
+border-radius:20px;
+
+margin:20px auto;
+
+display:block;
+
+box-shadow:0 0 20px white;
+
+}
+
+video{
+
+width:100%;
+
+margin-top:20px;
+
+border-radius:20px;
+
+}
+
+/* Music Box */
+
+.music-player{
+
+position:fixed;
+
+bottom:15px;
+
+right:15px;
+
+background:rgba(255,255,255,.1);
+
+padding:15px;
+
+border-radius:20px;
+
+backdrop-filter:blur(10px);
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+h1{
+
+font-size:40px;
+
+}
+
+h2{
+
+font-size:26px;
+
+}
+
+.profile{
+
+width:200px;
+
+height:200px;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+#typing{
+
+font-size:16px;
+
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+<div class="container">
+
+<div class="logo">
+💜 ✨ 🎤 ✨ 💜
+</div>
+
+<h1>Happy Birthday</h1>
+
+<h2>Wilhelmina 💜</h2>
+
+<img src="wb.jpg"
+class="profile"
+alt="Wilhelmina">
+
+<div class="cake">
+
+<div class="candle">
+<div class="flame">🔥</div>
+</div>
+
+<div class="layer layer1"></div>
+
+<div class="layer layer2"></div>
+
+<div class="layer layer3"></div>
+
+</div>
+
+<div class="card">
+
+<p id="typing"></p>
+
+</div>
+
+<div class="buttons">
+
+<button onclick="openWish()">
+
+🎁 Birthday Surprise
+
+</button>
+
+<button onclick="openGallery()">
+
+📸 Our Beautiful Memories
+
+</button>
+
+<button
+class="musicBtn"
+onclick="toggleMusic()"
+id="musicButton">
+
+▶ Play Music
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ============================= -->
+
+<!-- Birthday Popup -->
+
+<!-- ============================= -->
+
+<div
+class="popup"
+id="wishPopup">
+
+<div class="popup-content">
+
+<button
+class="close"
+onclick="closeWish()">
+
+✕
+
+</button>
+
+<h2 style="margin-bottom:20px;">
+
+🎂 Happy Birthday Mom 💜
+
+</h2>
+
+<p style="line-height:2;">
+
+Happy Birthday, Wilhelmina!
+
+Thank you for your endless love,
+your kindness,
+your strength,
+and every sacrifice you've made.
+
+May today be filled with joy,
+laughter,
+good health,
+and countless blessings.
+
+May all your dreams continue to come true.
+
+You deserve the happiest birthday ever.
+
+I love you so much.
+
+💜 Borahae 💜
+
+</p>
+
+<div
+style="font-size:70px;
+margin-top:25px;">
+
+🎂🎉💜🎈
+
+</div>
+
+<br>
+
+<button onclick="closeWish()">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ============================= -->
+
+<!-- Memory Popup -->
+
+<!-- ============================= -->
+
+<div
+class="popup"
+id="galleryPopup">
+
+<div class="popup-content">
+
+<button
+class="close"
+onclick="closeGallery()">
+
+✕
+
+</button>
+
+<h2>
+
+💜 Our Beautiful Memories 💜
+
+</h2>
+
+<p
+style="
+margin-bottom:20px;
+line-height:2;
+">
+
+Every memory with you is a treasure.
+
+Thank you for every smile,
+every hug,
+every lesson,
+and every beautiful moment.
+
+I will cherish them forever.
+
+</p>
+
+<img
+src="bs.jpg"
+class="memory"
+alt="Memory">
+
+<video
+controls>
+
+<source
+src="videoooo.mp4"
+type="video/mp4">
+
+Your browser does not support video.
+
+</video>
+
+<br><br>
+
+<button
+onclick="closeGallery()">
+
+Close Gallery
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Music -->
+
+<audio
+id="music"
+loop>
+
+<source
+src="all.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<div class="music-player">
+
+💜 BTS Purple Vibes
+
+</div>
+
+<script>
+// =============================
+// Birthday Message (Typewriter)
+// =============================
+
+const text = `Dear Mom,
+
+Happy Birthday!
+
+Thank you for your endless love,
+care, patience, and support.
+
+Every hug you've given,
+every sacrifice you've made,
+and every smile you've shared
+has made my life brighter.
+
+I wish you good health,
+happiness,
+peace,
+and many more birthdays
+filled with love.
+
+May God bless you always.
+
+I love you so much.
+
+Happy Birthday Wilhelmina!
+
+💜 Borahae Forever 💜`;
+
+let index = 0;
+
+function typeWriter(){
+
+    if(index < text.length){
+
+        document.getElementById("typing").innerHTML += text.charAt(index);
+
+        index++;
+
+        setTimeout(typeWriter,35);
+
+    }
+
+}
+
+window.addEventListener("load",function(){
+
+    typeWriter();
+
+    createStars();
+
+});
+
+// =============================
+// Stars
+// =============================
+
+function createStars(){
+
+    const container=document.getElementById("stars");
+
+    for(let i=0;i<120;i++){
+
+        const star=document.createElement("div");
+
+        star.className="star";
+
+        star.style.left=Math.random()*100+"%";
+
+        star.style.top=Math.random()*100+"%";
+
+        star.style.animationDelay=Math.random()*3+"s";
+
+        star.style.opacity=Math.random();
+
+        container.appendChild(star);
+
+    }
+
+}
+
+// =============================
+// Floating Hearts
+// =============================
+
+const hearts=["💜","💖","✨","⭐","🎈"];
+
+function makeHeart(){
+
+    let h=document.createElement("div");
+
+    h.className="heart";
+
+    h.innerHTML=hearts[Math.floor(Math.random()*hearts.length)];
+
+    h.style.left=Math.random()*100+"vw";
+
+    h.style.animationDuration=(6+Math.random()*5)+"s";
+
+    document.body.appendChild(h);
+
+    setTimeout(()=>{
+
+        h.remove();
+
+    },11000);
+
+}
+
+setInterval(makeHeart,700);
+
+// =============================
+// Music
+// =============================
+
+const music=document.getElementById("music");
+
+let playing=false;
+
+function toggleMusic(){
+
+    if(!playing){
+
+        music.play();
+
+        playing=true;
+
+        document.getElementById("musicButton").innerHTML="⏸ Pause Music";
+
+    }
+
+    else{
+
+        music.pause();
+
+        playing=false;
+
+        document.getElementById("musicButton").innerHTML="▶ Play Music";
+
+    }
+
+}
+
+// First tap/click starts music (browser autoplay policy)
+document.addEventListener("click",function(){
+
+    if(!playing){
+
+        music.play().then(()=>{
+
+            playing=true;
+
+            document.getElementById("musicButton").innerHTML="⏸ Pause Music";
+
+        }).catch(()=>{});
+
+    }
+
+},{once:true});
+
+// =============================
+// Popups
+// =============================
+
+function openWish(){
+
+    document.getElementById("wishPopup").style.display="flex";
+
+    launchConfetti();
+
+}
+
+function closeWish(){
+
+    document.getElementById("wishPopup").style.display="none";
+
+}
+
+function openGallery(){
+
+    document.getElementById("galleryPopup").style.display="flex";
+
+}
+
+function closeGallery(){
+
+    document.getElementById("galleryPopup").style.display="none";
+
+    const vid=document.querySelector("video");
+
+    vid.pause();
+
+    vid.currentTime=0;
+
+}
+
+// =============================
+// Confetti
+// =============================
+
+function launchConfetti(){
+
+    for(let i=0;i<120;i++){
+
+        let c=document.createElement("div");
+
+        c.style.position="fixed";
+
+        c.style.width="8px";
+
+        c.style.height="8px";
+
+        c.style.background=["#ffffff","#ff66cc","#b517ff","#ffd700","#00e5ff"][Math.floor(Math.random()*5)];
+
+        c.style.left=Math.random()*100+"vw";
+
+        c.style.top="-20px";
+
+        c.style.zIndex="9999";
+
+        c.style.borderRadius="50%";
+
+        c.style.pointerEvents="none";
+
+        c.style.transition="transform 3s linear, opacity 3s linear";
+
+        document.body.appendChild(c);
+
+        requestAnimationFrame(()=>{
+
+            c.style.transform=`translateY(${window.innerHeight+50}px) rotate(${Math.random()*720}deg)`;
+
+            c.style.opacity="0";
+
+        });
+
+        setTimeout(()=>{
+
+            c.remove();
+
+        },3000);
+
+    }
+
+}
+
+// =============================
+// ESC closes popups
+// =============================
+
+document.addEventListener("keydown",function(e){
+
+    if(e.key==="Escape"){
+
+        closeWish();
+
+        closeGallery();
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
